@@ -48,7 +48,7 @@ class ViewController: UIViewController {
             // 再生時の処理を実装
 
             // タイマーをセットする
-            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
             //#selectorが出てきたら@objcつける
 
             // ボタンの名前を停止に変える
@@ -89,9 +89,6 @@ class ViewController: UIViewController {
     }
     
     //画像をタップして画面遷移
-    @IBAction func idou(_ sender: Any) {
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             // segueから遷移先のResultViewControllerを取得する
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
@@ -102,8 +99,11 @@ class ViewController: UIViewController {
             resultViewController.x = imageArray[1]
         }; if imageView.image == imageArray[2] {
             resultViewController.x = imageArray[2]
+        }
+        // タイマーを停止する
+        timer.invalidate()
+        
     }
-}
     
     @IBOutlet weak var susumu: UIButton!
     
@@ -132,5 +132,8 @@ class ViewController: UIViewController {
     }
     // 他の画面から segue を使って戻ってきた時に呼ばれる
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        
+        // タイマーを再開する
+        timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
     }
 }
