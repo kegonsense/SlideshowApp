@@ -100,8 +100,21 @@ class ViewController: UIViewController {
         }; if imageView.image == imageArray[2] {
             resultViewController.x = imageArray[2]
         }
+        
+        if timer != nil {
         // タイマーを停止する
         timer.invalidate()
+            
+        // タイマーを削除しておく(timer.invalidateだけだとtimerがnilにならないため)
+        timer = nil
+        //再生/停止ボタンに連動させて進むと戻るのボタンも処理
+        susumu.isEnabled = true
+        modoru.isEnabled = true
+            
+        // ボタンの名前を再生に直しておく
+        saisei.setTitle("再生", for: .normal)
+            
+        }
         
     }
     
@@ -132,8 +145,5 @@ class ViewController: UIViewController {
     }
     // 他の画面から segue を使って戻ってきた時に呼ばれる
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
-        
-        // タイマーを再開する
-        timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
     }
 }
