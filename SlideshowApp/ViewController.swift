@@ -24,19 +24,19 @@ class ViewController: UIViewController {
     // スライドショーさせる画像の配列を宣言
     var imageArray:[UIImage] = [
         //imageArray[0]
-        UIImage(named: "1")!,
+        UIImage(named:"/Users/satoukengo/Desktop/課題/SlideshowApp/SlideshowApp/gazou/a")!,
         
         //imageArray[1]
-        UIImage(named: "2")!,
+        UIImage(named: "/Users/satoukengo/Desktop/課題/SlideshowApp/SlideshowApp/gazou/b")!,
         
         //imageArray[2]
-        UIImage(named: "3")!
+        UIImage(named: "/Users/satoukengo/Desktop/課題/SlideshowApp/SlideshowApp/gazou/c")!
     ]
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = UIImage(named: "1")!
+        imageView.image = UIImage(named: "/Users/satoukengo/Desktop/課題/SlideshowApp/SlideshowApp/gazou/a")!
         //右辺、変数名でもOK、imageView.image = imageArray[0]
         }
     

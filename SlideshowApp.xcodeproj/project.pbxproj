@@ -12,9 +12,8 @@
 		A2415FEE26BD6C7A0013671E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2415FED26BD6C7A0013671E /* SceneDelegate.swift */; };
 		A2415FF026BD6C7A0013671E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2415FEF26BD6C7A0013671E /* ViewController.swift */; };
 		A2415FF326BD6C7A0013671E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2415FF126BD6C7A0013671E /* Main.storyboard */; };
-		A2415FF526BD6C7B0013671E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2415FF426BD6C7B0013671E /* Assets.xcassets */; };
 		A2415FF826BD6C7B0013671E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2415FF626BD6C7B0013671E /* LaunchScreen.storyboard */; };
-		A241600B26C257EE0013671E /* プリント xcode用 in Resources */ = {isa = PBXBuildFile; fileRef = A241600A26C257EE0013671E /* プリント xcode用 */; };
+		A2D3D81426D0FA4200B20755 /* gazou in Resources */ = {isa = PBXBuildFile; fileRef = A2D3D81326D0FA4200B20755 /* gazou */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +23,9 @@
 		A2415FED26BD6C7A0013671E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A2415FEF26BD6C7A0013671E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A2415FF226BD6C7A0013671E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A2415FF426BD6C7B0013671E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2415FF726BD6C7B0013671E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2415FF926BD6C7B0013671E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A241600A26C257EE0013671E /* プリント xcode用 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "プリント xcode用"; sourceTree = "<group>"; };
+		A2D3D81326D0FA4200B20755 /* gazou */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gazou; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +58,12 @@
 		A2415FEA26BD6C7A0013671E /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
+				A2D3D81326D0FA4200B20755 /* gazou */,
 				A2415FEB26BD6C7A0013671E /* AppDelegate.swift */,
 				A2415FED26BD6C7A0013671E /* SceneDelegate.swift */,
 				A2415FEF26BD6C7A0013671E /* ViewController.swift */,
 				A2415FF126BD6C7A0013671E /* Main.storyboard */,
 				A21DC9CE26C671B10082C4F4 /* ResultViewController.swift */,
-				A2415FF426BD6C7B0013671E /* Assets.xcassets */,
-				A241600A26C257EE0013671E /* プリント xcode用 */,
 				A2415FF626BD6C7B0013671E /* LaunchScreen.storyboard */,
 				A2415FF926BD6C7B0013671E /* Info.plist */,
 			);
@@ -130,10 +127,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2D3D81426D0FA4200B20755 /* gazou in Resources */,
 				A2415FF826BD6C7B0013671E /* LaunchScreen.storyboard in Resources */,
-				A2415FF526BD6C7B0013671E /* Assets.xcassets in Resources */,
 				A2415FF326BD6C7A0013671E /* Main.storyboard in Resources */,
-				A241600B26C257EE0013671E /* プリント xcode用 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

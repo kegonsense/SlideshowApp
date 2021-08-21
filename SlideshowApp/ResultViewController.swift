@@ -10,15 +10,15 @@ import UIKit
 class ResultViewController: UIViewController {
     // 2画面目のimageViewを、StoryboardでこのViewControllerにIBOutletとして接続しておく
     @IBOutlet weak var imageView: UIImageView!
+    
     // 受け取るためのプロパティ（変数）を宣言しておく
     var x:UIImage! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         imageView.image = x
-    }
-    //拡大ボタン → イメージのサイズ変更
-    @IBAction func kakudai(_ sender: Any) {
         
         //viewの横幅をイメージビューの横幅で割って、縮小率を計算
         let ratio = view.bounds.width / (x.size.width)
@@ -41,7 +41,7 @@ class ResultViewController: UIViewController {
         //イメージビューをviewに配置
         view.addSubview(kakudaiImageView)
             }
-           }
+    }
     // Do any additional setup after loading the view.
 
     /*
